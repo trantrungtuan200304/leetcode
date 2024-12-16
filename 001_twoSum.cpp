@@ -5,6 +5,7 @@ public:
 
         for (int i = 0; i < nums.size(); i++) {
             int subtractResult = target - nums[i];
+            // check if hash_table has subtractResult as a key
             if (hash_table.count(subtractResult)) {
                 return {hash_table[subtractResult], i};
             }
