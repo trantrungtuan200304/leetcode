@@ -9,5 +9,12 @@ public:
             hash_map[nums[i]] = i;
         }
         return false;
+
+        unordered_map<int, int> hash_map;
+        for (int num : nums) {
+            if (hash_map[num] >= 1) return true;
+            hash_map[num]++;
+        }
+        return false;
     }
 };
