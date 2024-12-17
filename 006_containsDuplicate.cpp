@@ -10,6 +10,8 @@ public:
         }
         return false;
 
+        // Count the appearance of each element
+        // If element appears more than twice, it will return true
         unordered_map<int, int> hash_map;
         for (int num : nums) {
             if (hash_map[num] >= 1) return true;
