@@ -1,3 +1,4 @@
+// Use two pointers 
 class Solution {
 public:
     int removeDuplicates(vector<int>& nums) {
